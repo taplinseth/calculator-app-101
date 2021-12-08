@@ -63,9 +63,17 @@ const putResultInElement = (operationResults) => {
   // access the DOM by writing "document" then use the method "getElementById" and pass it the id, "result".
   document.getElementById("result").innerHTML = "Results: " + operationResults
 
+
   // Remember, each element has built in properties like "innerHTML" which we can change to anything we like. 
   // Here we give it a string: "Results: " and add the value of the operation to it.
 }
+
+
+function clearResult() {
+  document.getElementById("result").innerHTML = "";
+}
+
+// document.getElementById("clearButton").addEventListener("click", clearResult());
 
 // The function uses the value of "operation" variable to determine which operation function it should use on the number: add, subtract, multiply, divide, or modulus
 const equals = () => {
